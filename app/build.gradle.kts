@@ -46,6 +46,7 @@ plugins {
     }
 
   dependencies {
+      implementation("com.github.HereLiesAz.AzNavRail:aznavrail-updates-compat:12.5")
       implementation(libs.material)
       implementation(libs.androidx.appcompat)
       // Jetpack Compose BOM (Bill of Materials) - ensures compatible versions
