@@ -1,5 +1,7 @@
 package com.hereliesaz.nhen
 
+import com.hereliesaz.aznavrail.updates.AzUpdateChecker
+
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.ObjectAnimator
@@ -25,6 +27,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        AzUpdateChecker.check(this, "HereLiesAz/nhen")
         setContentView(R.layout.activity_main)
 
         val rootLayout = findViewById<LinearLayout>(R.id.root_layout)
